@@ -1,53 +1,68 @@
----
-title: "T-Smartwatch Journal"
-author: "Mohammed Talha"
-description: "Build log for a custom ESP32 smartwatch PCB designed using KiCad"
-created_at: "2025-06-20"
-total_time_hours: 28
----
-
-# Journal – T-Smartwatch (ESP32 Smartwatch PCB)
-
-## 🗓️ June 20 – Idea & Planning (2 hours)
-Started thinking about building my own smartwatch PCB. I wanted to make something compact using ESP32 and include features like heart rate sensor, OLED display, and USB charging. I took notes from other open-source watch projects and decided to build one in KiCad.
-
-## 🗓️ June 23 – Schematic Design & Part Research (3 hours)
-Selected the major components – ESP32-WROOM, MAX30102 heart rate sensor, SSD1306 OLED, SI1317DL voltage regulator, and USB-C connector. Started building the schematic in KiCad and created custom symbols where needed.
-
-## 🗓️ June 25 – Completed Schematic (2 hours)
-Wired up power supply lines, decoupling caps, USB charging circuit, and I2C lines for OLED + sensor. Verified connections using datasheets.
-
-## 🗓️ June 27 – Board Layout Started (3 hours)
-Started arranging components and defining board shape. Opted for a rectangular layout. Set up 4-layer stack with separate ground and power planes. Placed USB and screen for user-accessibility.
-
-## 🗓️ June 29 – Routing and Cleanup (3 hours)
-Did most of the routing for power and signal lines. Kept traces short, used minimal vias, and ensured no DRC errors. Placed silkscreen text carefully.
-
-<img width="760" height="756" alt="image" src="https://github.com/user-attachments/assets/7a4304ec-cf27-49a9-b235-e32f7b07df68" />
- 
-<img width="753" height="744" alt="image" src="https://github.com/user-attachments/assets/d47cac8a-fc1b-44aa-aeec-c0745e762aab" />
-
-
-## 🗓️ July 2 – Final Touches on PCB (3 hours)
-Added labels, cleaned routing paths, adjusted clearances. Verified power and ground fills. Ran design rule check and ERC.
-
-
-## 🗓️ July 4 – 3D Render & Schematic Output (2 hours)
-Generated 3D render using KiCad’s viewer and saved schematic as PDF. Took screenshots of all four PCB layers and final layout.
-
-
-## 🗓️ July 6 – Case Design (2 hours)
-Used online 3D box generator to design a basic smartwatch enclosure to match PCB size. Added cutouts for USB and screen.
-
-## 🗓️ July 8 – Documentation and README (3 hours)
-Wrote README from scratch describing what the board does and how it’s laid out. Listed all images and files. Verified schematic matches description.
-
-## 🗓️ July 10 – Final Checks and Polish (3 hours)
-Reviewed all files, checked BOM values and links. Wrote this journal, created LICENSE, and made sure everything is in the right format.
-
-## 🗓️ July 11 – Submitted! (0 hours)
-Submitted the final GitHub repo to Hack Club Highway and shared in #highway Slack channel.
+# JOURNAL.md – Talha Smartwatch  
+**Total Time Spent: 28 hours**  
+**Project Duration: June 20, 2025 – July 11, 2025**
 
 ---
 
-**✅ Total Time Spent: 28 hours**
+### June 20 – Idea and Planning (2 hours)
+
+I’ve been wanting to build a custom smartwatch for a while, and today I finally started working on it. The plan was to use an ESP32 as the brain of the watch and include basic wearable features like an OLED screen for time display, a heart rate sensor, and charging support via USB. I spent time researching what kind of components would be suitable for a compact build and jotted down a rough idea of the layout. I also looked at a few GitHub repos for inspiration but made sure not to copy anything directly.
+
+---
+
+### June 22 – Selecting Components and Reference Research (3 hours)
+
+I finalized most components today. I chose the ESP32-WROOM module for its built-in WiFi and BLE, the MAX30102 for heart rate sensing, and a TP4056 for battery charging. I also noted down resistors, capacitors, crystal, and pull-up/down values. I went through datasheets and a few schematics online to make sure I was wiring everything right. I created a rough block diagram on paper showing the layout and interaction between modules. Sourcing links were noted for the final BOM.
+
+---
+
+### June 25 – Starting Schematic in KiCad (4 hours)
+
+Created a new KiCad project and began with the schematic. I added the ESP32 first, connected its basic pins — power, EN, boot, GND, and GPIOs. Then added the heart rate sensor module interface, the charging circuit (TP4056 + battery protection), and USB interface with ESD protection. Also added decoupling caps and pull-up resistors. The schematic took longer than expected, mostly due to checking footprints and libraries. I didn’t rush and double-checked all connections.
+
+---
+
+### June 27 – Finalizing and Cleaning Up the Schematic (2 hours)
+
+I wrapped up the schematic and gave it a final review. Adjusted some capacitor values and added silkscreen labels. I exported the schematic to both `.kicad_sch` and `.pdf`. Took a high-resolution screenshot for visual reference in the journal and README. This is the final circuit diagram I’ll be using for layout.
+
+---
+
+### June 29 – Starting PCB Layout (4 hours)
+
+Today was all about layout. I set up a 4-layer board in KiCad: Top layer for signal, inner layer 1 for GND, inner layer 2 for VCC, and bottom layer for signal. Started placing components around a circular layout (smartwatch-style). Made sure to position the OLED and sensor in accessible areas. Started routing signals — especially power and data lines from ESP32 to OLED and heart sensor. Had to rotate components a few times to optimize space.
+
+---
+
+### July 2 – Routing and Design Rule Checks (3 hours)
+
+Finished routing the main signal lines. Used filled zones for ground and power layers. Did a few DRC passes to fix minor issues with vias and trace clearances. I also adjusted the trace width for high current paths like battery input and charging circuit. By the end, the PCB looked organized, and I was confident about the connections.
+
+---
+
+### July 5 – Designing the Case in Tinkercad (3 hours)
+
+Since this is a wearable, I wanted to make a case that would actually fit the PCB. I used Tinkercad and entered approximate dimensions based on the PCB layout. Designed a circular base with slots for the display and USB port. Also left side cutouts for future buttons or battery connector. Exported a render and added it to the project. I might 3D print it later.
+
+---
+
+### July 8 – Documentation and Cleanup (2 hours)
+
+Wrote the README file explaining what the project does and how it’s structured. Made sure to list all files in the repo and explain their purpose. Cleaned up unnecessary files. Added the schematic image, PCB layer images, and case render to the `/images` folder. Created the BOM with actual Indian sourcing links and prices in both INR and USD.
+
+---
+
+### July 11 – Final Review and Submission (2 hours)
+
+Added this journal to the repo, reviewed all files again, and filled in the Hack Club Highway submission form. Posted in the #highway channel on Slack with the repo link. Reviewers asked for the schematic to be uploaded, so I made sure `esp32-smartwatch.kicad_sch` is in the root. I also added more build images and renders. Everything is now finalized.
+
+---
+
+### Total Time: 28 hours
+
+This was my first time designing a smartwatch PCB, and I learned a lot through the process. From sourcing parts and checking datasheets to designing schematics, routing multilayer boards, and creating a case, it was a complete experience. I now feel more confident about hardware design and plan to take this further by possibly assembling and testing the final board.
+
+---
+
+### Images 
+
