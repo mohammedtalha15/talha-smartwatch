@@ -6,7 +6,6 @@ This is a custom smartwatch project built using the ESP32 module. I designed a c
 
 As a first test, I ran a basic blink sketch to make sure the board powered on correctly and the ESP32 was working. The onboard LED blinked successfully.
 
-![Blinky](images/blinky.gif)
 
 ## Schematic
 
@@ -33,11 +32,12 @@ The board is a 4-layer PCB. These are the individual layers exported from KiCad.
 
 ### Inner Layer 2 - VCC and Signal
 
-![Inner layer 2](images/in2_VCC.PNG)
+<img width="751" height="719" alt="image" src="https://github.com/user-attachments/assets/2866a7e5-b4a8-40c6-b206-c5c597a2ac4d" />
 
 ### Bottom Layer - Signal
 
-![Bottom layer](images/bott_layer.PNG)
+<img width="753" height="748" alt="image" src="https://github.com/user-attachments/assets/d2a73cb1-136b-4563-a8d0-13e126b036f8" />
+
 
 ## Files in this Repository
 
