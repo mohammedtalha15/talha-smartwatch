@@ -10,7 +10,7 @@ As a first test, I ran a basic blink sketch to make sure the board powered on co
 ## Schematic
 
 This is the full schematic I created in KiCad. It includes the ESP32-WROOM module, power regulation, crystal, buttons, and headers for display and battery.
-
+<img width="2462" height="1740" alt="image" src="https://github.com/user-attachments/assets/fbe6d9d4-aa3a-4111-8e86-219198aa036f" />
 
 
 
