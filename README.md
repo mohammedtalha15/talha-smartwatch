@@ -20,7 +20,7 @@ The board is a 4-layer PCB. These are the individual layers exported from KiCad.
 
 ### All Layers (combined)
 
-![All layers](images/all_layers.PNG)
+<img width="744" height="740" alt="image" src="https://github.com/user-attachments/assets/11a3f117-04ff-439f-a898-acac4bb909a3" />
 
 ### Top Layer - Signal
 
