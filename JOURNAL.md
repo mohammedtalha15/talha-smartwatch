@@ -61,4 +61,10 @@ I also added a LICENSE file, detailed BOM with INR/USD prices and links, and thi
 
 This was one of the most challenging but rewarding PCB projects I’ve done so far. I learned a lot about KiCad, PCB design, and power management circuits. Looking forward to actually assembling and testing this soon.
 <img width="744" height="740" alt="image" src="https://github.com/user-attachments/assets/a9156b50-22ed-4ea7-8833-5c0ff35d946e" />
+<img width="753" height="744" alt="image" src="https://github.com/user-attachments/assets/380218ad-36b4-45d5-bb23-d6b91957e638" />
+<img width="760" height="756" alt="image" src="https://github.com/user-attachments/assets/e66cf29e-a43c-43fb-9e2f-15aec874e096" />
+
+
+
+
 
