@@ -70,6 +70,7 @@ This was my first time designing a smartwatch PCB, and I learned a lot through t
 <img width="600" height="502" alt="image" src="https://github.com/user-attachments/assets/7a1caec8-6ea4-4743-a30a-1ef8b21ffee6" />
 <img width="753" height="744" alt="image" src="https://github.com/user-attachments/assets/10030770-79f5-4355-ad6e-1232384c92b4" />
 <img width="751" height="719" alt="image" src="https://github.com/user-attachments/assets/c4b67a30-2e04-407e-8898-50166b462cba" />
+<img width="3752" height="2718" alt="image" src="https://github.com/user-attachments/assets/23c03d39-06d3-4f57-9c88-93ca3bc77636" />
 
 
 
