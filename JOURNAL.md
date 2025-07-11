@@ -1,70 +1,53 @@
 ---
-title: "ESP32 Smartwatch"
-author: "Mohammed Talha (mohammedtalha15)"
-description: "A custom-built ESP32-based smartwatch PCB with display, power management, and sensors."
+title: "T-Smartwatch Journal"
+author: "Mohammed Talha"
+description: "Build log for a custom ESP32 smartwatch PCB designed using KiCad"
 created_at: "2025-06-20"
 total_time_hours: 28
 ---
 
-# Journal – ESP32 Smartwatch PCB
+# Journal – T-Smartwatch (ESP32 Smartwatch PCB)
 
-## Week 1 – Planning & Research (5 hours)
+## 🗓️ June 20 – Idea & Planning (2 hours)
+Started thinking about building my own smartwatch PCB. I wanted to make something compact using ESP32 and include features like heart rate sensor, OLED display, and USB charging. I took notes from other open-source watch projects and decided to build one in KiCad.
 
-I wanted to build something wearable and practical — that’s how I got the idea for making my own smartwatch. I explored some community projects and references like the open-smartwatch repo and checked what chips and displays were commonly used. I decided I would base mine around the ESP32 for its versatility and WiFi/Bluetooth features.
+## 🗓️ June 23 – Schematic Design & Part Research (3 hours)
+Selected the major components – ESP32-WROOM, MAX30102 heart rate sensor, SSD1306 OLED, SI1317DL voltage regulator, and USB-C connector. Started building the schematic in KiCad and created custom symbols where needed.
 
-I finalized that this project would include a display (for showing time, sensor values, etc.), a Li-ion battery with charger circuit, and minimal buttons. I also made a rough list of required components and functionalities I’d need.
+## 🗓️ June 25 – Completed Schematic (2 hours)
+Wired up power supply lines, decoupling caps, USB charging circuit, and I2C lines for OLED + sensor. Verified connections using datasheets.
 
----
+## 🗓️ June 27 – Board Layout Started (3 hours)
+Started arranging components and defining board shape. Opted for a rectangular layout. Set up 4-layer stack with separate ground and power planes. Placed USB and screen for user-accessibility.
 
-## Week 2 – KiCad Setup & Schematic Design (6 hours)
+## 🗓️ June 29 – Routing and Cleanup (3 hours)
+Did most of the routing for power and signal lines. Kept traces short, used minimal vias, and ensured no DRC errors. Placed silkscreen text carefully.
 
-This week I set up KiCad and began building the schematic. I created the full block diagram for how the ESP32 would connect to the rest of the components: display (via SPI), push buttons, charging circuit (TP4056), and a voltage regulator.
+<img width="760" height="756" alt="image" src="https://github.com/user-attachments/assets/7a4304ec-cf27-49a9-b235-e32f7b07df68" />
+ 
+<img width="753" height="744" alt="image" src="https://github.com/user-attachments/assets/d47cac8a-fc1b-44aa-aeec-c0745e762aab" />
 
-I added custom symbols and footprints to the KiCad library and started routing the schematic using proper decoupling capacitors and GPIO mapping. I kept everything neat so the PCB process would be smoother later.
 
----
+## 🗓️ July 2 – Final Touches on PCB (3 hours)
+Added labels, cleaned routing paths, adjusted clearances. Verified power and ground fills. Ran design rule check and ERC.
 
-## Week 3 – PCB Layout & Routing (7 hours)
 
-With the schematic done, I moved on to laying out the board in KiCad. I spent quite a bit of time getting the placement right since I was aiming for a compact layout that could fit inside a small smartwatch enclosure.
+## 🗓️ July 4 – 3D Render & Schematic Output (2 hours)
+Generated 3D render using KiCad’s viewer and saved schematic as PDF. Took screenshots of all four PCB layers and final layout.
 
-I did a 4-layer board (Signal, GND, VCC, and Signal bottom) to keep things clean. I added mounting holes, adjusted track widths, added ground fills, and made sure impedance-critical traces were fine. Also had to fix a few DRC warnings.
 
-By the end of the week, I had the PCB design ready.
+## 🗓️ July 6 – Case Design (2 hours)
+Used online 3D box generator to design a basic smartwatch enclosure to match PCB size. Added cutouts for USB and screen.
 
----
+## 🗓️ July 8 – Documentation and README (3 hours)
+Wrote README from scratch describing what the board does and how it’s laid out. Listed all images and files. Verified schematic matches description.
 
-## Week 4 – BOM Finalization & Gerber Generation (5 hours)
+## 🗓️ July 10 – Final Checks and Polish (3 hours)
+Reviewed all files, checked BOM values and links. Wrote this journal, created LICENSE, and made sure everything is in the right format.
 
-I finalized the Bill of Materials this week — listing all the components with part numbers and sourcing options. I optimized the BOM to make sure the components I picked were available either on LCSC, Mouser, or Amazon India.
-
-Then I generated all the required Gerber files, added assembly files (positions.csv, designators.csv), and exported a 3D render of the board using KiCad.
-
-I reviewed the board again before uploading everything to GitHub and ensured all schematic + layout files were properly organized.
-
----
-
-## Week 5 – Documentation & Final Touches (5 hours)
-
-I wrote the README.md clearly explaining each layer of the board with screenshots. I included:
-
-- Blinky test GIF
-- Schematic preview
-- PCB layer screenshots
-
-I also added a LICENSE file, detailed BOM with INR/USD prices and links, and this journal file. After confirming all repo files were in place, I pushed everything and prepared for submission to Hack Club’s Highway program.
+## 🗓️ July 11 – Submitted! (0 hours)
+Submitted the final GitHub repo to Hack Club Highway and shared in #highway Slack channel.
 
 ---
 
-**Total Time Spent: 28 hours**
-
-
-This was one of the most challenging but rewarding PCB projects I’ve done so far. I learned a lot about KiCad, PCB design, and power management circuits. Looking forward to actually assembling and testing this soon.
-<img width="744" height="740" alt="image" src="https://github.com/user-attachments/assets/a9156b50-22ed-4ea7-8833-5c0ff35d946e" />
-<img width="753" height="744" alt="image" src="https://github.com/user-attachments/assets/380218ad-36b4-45d5-bb23-d6b91957e638" />
-<img width="760" height="756" alt="image" src="https://github.com/user-attachments/assets/e66cf29e-a43c-43fb-9e2f-15aec874e096" />
-
-
-
-
-
+**✅ Total Time Spent: 28 hours**
