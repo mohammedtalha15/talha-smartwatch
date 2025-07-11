@@ -11,7 +11,7 @@ As a first test, I ran a basic blink sketch to make sure the board powered on co
 
 This is the full schematic I created in KiCad. It includes the ESP32-WROOM module, power regulation, crystal, buttons, and headers for display and battery.
 
-<img width="2339" height="1656" alt="image" src="https://github.com/user-attachments/assets/e3a8a554-21cc-46a6-b459-cc2379d7428c" />
+
 
 
 ## PCB Layer Views
@@ -36,7 +36,6 @@ The board is a 4-layer PCB. These are the individual layers exported from KiCad.
 
 ### Bottom Layer - Signal
 
-<img width="753" height="748" alt="image" src="https://github.com/user-attachments/assets/d2a73cb1-136b-4563-a8d0-13e126b036f8" />
 
 
 ## Files in this Repository
