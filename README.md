@@ -42,7 +42,7 @@ The board is a 4-layer PCB. These are the individual layers exported from KiCad.
 
 - `esp32-smartwatch.kicad_sch` – KiCad schematic file  
 - `esp32-smartwatch.kicad_pcb` – KiCad PCB layout  
-- `bom.csv` – Bill of Materials  
+- `bom.md` – Bill of Materials  
 - `JOURNAL.md` – Build journal with progress logs  
 - `README.md` – Project description (this file)  
 - `images/` – All PCB and schematic images  
